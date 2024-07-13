@@ -1,8 +1,6 @@
 services:
-  backend:
+  mycodelib-backend:
     build: ./mycodelib-backend
-    volumes:
-      - ./backend:/app
     ports:
       - "5001:5000"
     environment:
@@ -11,7 +9,7 @@ services:
     depends_on:
       - db
 
-  frontend:
+  mycodelib-frontend:
     build: ./mycodelib-frontend
     ports:
       - "8080:8080"

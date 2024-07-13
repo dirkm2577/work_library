@@ -13,6 +13,11 @@ export default defineConfig({
       autoImport: true,
     }),
   ],
+  server: {
+    host: '0.0.0.0', // Listen on all network interfaces
+    port: 8080,      // Ensure this port matches your Dockerfile and docker-compose.yml
+    strictPort: true,
+  },
   define: { 'process.env': {} },
   resolve: {
     alias: {
