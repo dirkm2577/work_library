@@ -3,6 +3,7 @@ services:
     build: ./mycodelib-backend
     ports:
       - "5001:5000"
+      - "8000:8000"
     environment:
       - FLASK_ENV=development
       - FLASK_APP=app.py

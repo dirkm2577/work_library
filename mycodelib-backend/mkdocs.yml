@@ -1,0 +1,12 @@
+site_name: My Code Documentation
+nav:
+  - Home: docs/index.md
+  - Projects:
+      - Project 1: docs/projects/project1.md
+  - Features:
+      - Feature 1: docs/features/feature1.md
+  - Challenges:
+      - Challenge 1: docs/challenges/challenge1.md
+theme:
+  name: mkdocs
+
